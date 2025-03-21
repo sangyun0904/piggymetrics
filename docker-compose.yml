@@ -29,7 +29,7 @@ services:
       config:
         condition: service_healthy
     ports:
-      - 8761:8761
+      - 18761:8761
     logging:
       options:
         max-size: "10m"

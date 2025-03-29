@@ -1,4 +1,4 @@
-FROM java:8-jre
+cdcFROM openjdk:8-jre
 MAINTAINER Alexander Lukyanchikov <sqshq@sqshq.com>
 
 ADD ./target/statistics-service.jar /app/

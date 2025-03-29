@@ -36,6 +36,8 @@ public class ExchangeRatesServiceImpl implements ExchangeRatesService {
 			log.info("exchange rates has been updated: {}", container);
 		}
 
+		System.out.println("container rate : " + container.getRates());
+
 		return ImmutableMap.of(
 				Currency.EUR, container.getRates().get(Currency.EUR.name()),
 				Currency.RUB, container.getRates().get(Currency.RUB.name()),
